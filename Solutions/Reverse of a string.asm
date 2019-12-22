@@ -32,7 +32,11 @@
             INT 21H
             MOV DX,0AH
             MOV AH,2
-            INT 21H   
+            INT 21H
+            
+            LEA DX,MSG2
+            MOV AH,9
+            INT 21H    
             
         PRINT:
             AND DX,0
